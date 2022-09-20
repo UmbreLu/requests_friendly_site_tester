@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <body>
 <html>
-<h1 style:'text-align: center; border: 3px solid green'>Test How Webpages Responds to Python's Requests Lib</h1>
+<h1 style:'text-align: center; border: 3px solid green'>Test How Webpages Respond to Python's Requests Lib</h1>
 <br>
 <h4>This small Python script tests if a given URL is acceptive/receptive or not for Python's Requests lib get method.</h4>
 <br>
