@@ -8,9 +8,11 @@ assert len(sys.argv) == 2
 if __name__ == '__main__':
     print('\nChecking http response code for url: "{}".'.format(sys.argv[1]))
 
+    headers= {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0'}
+
     # try block for requesting url
     try:
-        response = requests.get(sys.argv[1], timeout=5)
+        response = requests.get(sys.argv[1], headers=headers, timeout=5)
         print("...\nResponse status code was {}.".format(str(response.status_code)))
     except Exception as exception:
         print("...\nAn exception occurred when requesting given url:\n{}".format(exception))
