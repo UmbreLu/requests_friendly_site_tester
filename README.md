@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<body>
+<html>
 <h1 style:'text-align: center; border: 3px solid green'>Test How Webpages Responds to Python's Requests Lib</h1>
 <br>
 <h4>This small Python script tests if a given URL is acceptive/receptive or not for Python's Requests lib get method.</h4>
@@ -20,4 +23,5 @@
 <p><em>function requestsful {<br>
     python3 ~/data_science/projects/requests_testing/reqtester.py $1<br>
 }</em></p>
-<p>Then, just type "<strong>requestsful [URL]</strong>" in terminal to check if a URL is able to be webscrapped with Pythons requests without any further headache.<p>
+<p>Then, just type "<strong>requestsful [URL]</strong>" in terminal to check if a URL is able to be webscrapped with Pythons requests without any further headache.</p>
+</body>
