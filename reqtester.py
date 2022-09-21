@@ -1,9 +1,19 @@
+"""
+See more explanations in
+https://github.com/UmbreLu/requests_friendly_site_tester/blob/main/README.md
+"""
+
+
 import sys
 import re
 import requests
 
-# make sure script was runned with additional arg
-assert len(sys.argv) == 2
+# making sure script was run with additional arg
+message = """The script must be run with one and only one
+additional argument which must be the URL upon
+which the checking will be made."""
+assert len(sys.argv) == 2, message
+print(sys.argv)
 
 if __name__ == '__main__':
     print('\nChecking http response code for url: "{}".'.format(sys.argv[1]))
@@ -20,7 +30,7 @@ if __name__ == '__main__':
     # in case of a positive response
     if response and response.status_code < 400:
 
-        #try block for site name re extraction
+        #try block for site name regex extraction
         try: # replace is for removing "\" from names to keep paths relative
             re_match = re.search("""^(http:\/\/|https:\/\/)(.+)(\/)(.*)""", sys.argv[1])
             site_file_name = re_match[2].replace('/', '_')
