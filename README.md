@@ -10,7 +10,7 @@
 <p>Besides using a fake user-agent header as Firefox under Windows, it doesn't try any other "trick" to get a successful request response.</p>
 <p><strong>Usage</strong></p>
 <p>This script is intended to be used from terminal with one additional parameter to Python's interpreter as the URL page link.<p>
-<p>So, if the command <em>"python3 reqtester.py https://www.google.com"</em> is issued into a Linux terminal (with working directory as where the script is or using absolute file path), it would start the script with the Google's URL as input argument and tries to figure out if google.com is up or not to answer a get request from Requests Python lib.</p>
+<p>So, if the command <em>"python3 reqtester.py https://www.google.com"</em> is issued into a Linux terminal (with working directory as where the script is --or using an absolute file path instead), it would start the script with the Google's URL as input argument and tries to figure out if google.com is up or not to answer a get request from Requests Python lib.</p>
     <br>
 <p><strong>Works best in Bash terminal with a defined function.</strong></p>
 <p>Write a function like this one at the botton of the .bashrc file:</p>
