@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
         #try block for site name re extraction
         try: # replace is for removing "\" from names to keep paths relative
-            re_match = re.search("""^(http:\/\/|https:\/\/)(.+)(\/)""", sys.argv[1])
+            re_match = re.search("""^(http:\/\/|https:\/\/)(.+)(\/)(.*)""", sys.argv[1])
             site_file_name = re_match[2].replace('/', '_')
         except Exception as exception:
             site_file_name = sys.argv[1][:25].replace('/', '_')
